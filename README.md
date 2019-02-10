@@ -1,6 +1,6 @@
 # dynamic-dns-updater
 ## What it is?
-A simple Python script to update your Dynamic DNS records on Google Domains. You can read more about it [here]().
+A simple Python script to update your Dynamic DNS records on Google Domains. You can read more about it [here](https://blog.erickduran.com/programming/2019/02/09/ddns-python-script/).
 
 
 ## Prerequisites
