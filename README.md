@@ -4,7 +4,7 @@ A simple Python script to update your Dynamic DNS records on Google Domains. You
 
 
 ## Prerequisites
-- Python (tested on 3.5)
+- Python (tested on 2.7)
 - A Google Domains domain
 
 ## Setting up Google Domains
@@ -16,7 +16,7 @@ You should configure the following variables (all obtained from your Google Doma
 - `password`
 - `hostname`
 
-You can also configure the line `time.sleep(300)` to a shorter or longer timespan (in seconds). 
+You can also configure the line `time.sleep(10)` to a shorter or longer timespan (in seconds). 
 
 The script includes a few logging lines to keep track of all the requests-responses. This will be stored automatically in a file called `ddns.log`. Feel free to comment this out if you don't need it.
 
@@ -24,7 +24,7 @@ The script includes a few logging lines to keep track of all the requests-respon
 
 To test the script, just `cd` to the directory where you stored the script and run the following command:
 ```bash
-python3 ddns.py
+python ddns.py
 ```
 Wait for the time you specified and check in your Google Domains page that the IP has changed to your current server's public IP address. 
 
