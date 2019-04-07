@@ -2,9 +2,8 @@
 ## What it is?
 A simple Python script to update your Dynamic DNS records on Google Domains. You can read more about it [here](https://blog.erickduran.com/programming/2019/02/09/ddns-python-script/).
 
-
 ## Prerequisites
-- Python (tested on 2.7)
+- Python (tested on 3.5)
 - A Google Domains domain
 
 ## Setting up Google Domains
@@ -24,7 +23,11 @@ The script includes a few logging lines to keep track of all the requests-respon
 
 To test the script, just `cd` to the directory where you stored the script and run the following command:
 ```bash
-python ddns.py
+python3 ddns.py
 ```
 Wait for the time you specified and check in your Google Domains page that the IP has changed to your current server's public IP address. 
 
+## Update on v3
+- Working on Python 3.5
+- Catched error caused by some `urllib` versions
+- Now stable and working for weeks, several IP changes
